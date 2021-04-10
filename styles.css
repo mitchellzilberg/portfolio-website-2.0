@@ -1,0 +1,347 @@
+:root {
+  --background-color: #ebebeb;
+  --primary-color: #265c70;
+  --secondary-color: #525664;
+  --third-color: #7ea0c4; 
+  --font-family: 'Montserrat', sans-serif;; 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+}
+
+hr {
+  width: 60%;
+  color: var(--primary-color);
+  margin: auto;  
+  border-top: 2px solid var(--third-color);
+}
+
+
+/* NAVBAR */
+li:first-child {
+  float: left;
+}
+
+li {
+  color: white;
+}
+
+.navigation-list__item {
+  text-decoration: none;
+  color: var(--background-color);
+  font-family: var(--font-family);
+  font-size: 18px;
+}
+
+.navigation-list__item--active,
+.navigation-list__item:hover {
+  color: var(--third-color);
+}
+
+.navigation-list li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.page-header {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+  display: flex;
+  width: 100%;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+
+.logo-mitchell {
+  font-family: var(--font-family);
+  padding: 15px 15px;
+  color: var(--background-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: left;
+}
+
+.logo-mitchell-about {
+  font-weight: 900;
+  font-size: 20px;
+  
+}
+
+.logo-mitchell-about:hover {
+  text-decoration: none;
+  color: var(--primary-color)
+  /* color: var(--third-color); */
+}
+
+.navigation-list-about {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.navigation-list-about:hover {
+  text-decoration: none;
+}
+
+.navigation-list__item-about:hover {
+  text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* END OF NAVBAR */
+
+/* ABOUT SECTION */
+#about {
+  margin-top: 120px;
+  height: 80vh;
+  margin-left: 60px;
+}
+
+.about-section {
+  display: flex;
+}
+
+.about-text {
+  width: 50%;
+  margin: 90px 0 0 60px;
+}
+
+.about-picture {
+  float: right;
+  margin-top: 60px;
+  margin-left: 120px;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  /* float: right; */
+  /* margin-right: 40px; */
+  border-radius: 50%;
+}
+
+.about-text-1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  padding-bottom: 30px;
+
+}
+
+.about-text-2 {
+  color: var(--third-color);
+  padding-bottom: 10px;
+}
+
+.about-text-3 {
+  color: var(--primary-color);
+  font-size: 4rem;
+  padding-bottom: 20px;
+
+}
+
+.about-text-4 {
+  color: var(--third-color);
+  padding-bottom: 120px;
+  width: 66%;
+
+}
+
+
+/* WORK SECTION */
+
+#work {
+  /* height: 40vh; */
+  /* background-color: red; */
+}
+
+.work-section {
+  height: auto;
+}
+
+.work-text-1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 80px;
+  padding-bottom: 40px;
+
+}
+
+.work-button {
+  text-align: center;
+  width: 150px;
+  border: none;
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+  margin-top: 20px;
+}
+
+.project-1, .project-2, .project-3, .project-4, .project-5 {
+  display: flex;
+  width: 65%;
+  margin: auto;
+  margin-top: 60px;
+  color: var(--primary-color);
+}
+
+.project-5 {
+  margin-bottom: 60px;
+}
+
+.note-keeper-img {
+  height: 200px;
+  width: 300px;
+  margin-right: 66px;
+  border: 1px solid black;
+  box-shadow: none;
+}
+
+.myflix-img {
+  height: 200px;
+  width: 300px;
+  margin-right: 65px;
+  border: 1px solid black;
+  box-shadow: none;
+}
+
+.note-h3, .note-p {
+  padding-bottom: 20px;
+}
+
+/* HOME SECTION */
+#home {
+  margin-top: 80px;
+  height: 80vh;
+  margin-left: 60px;
+}
+
+.home-section {
+  display: flex;
+  width: 65%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.home-text {
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.home-img {
+  height: 350px;
+  width: 300px;
+}
+
+.home-p {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-left: 40px;
+}
+
+.home-button {
+  margin-top: 60px;
+  font-size: 1rem;
+}
+
+
+/* CONTACT SECTION */
+
+#contact{
+  height: 60vh;
+  width: 50%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.contact-me-div {
+  /* text-align: center; */
+  margin: auto;
+}
+
+.contact-h1 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 3rem;
+}
+
+.contact-p {
+  width: 80%;
+  font-size: 108%;
+  margin: auto;
+  margin-top: 30px;
+  color: var(--primary-color);
+
+}
+
+.contact-email{
+  margin-top: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+.contact-email:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page-footer-index {
+  margin-top: 120px;
+}
+
+.social-media-p {
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.social-media-link {
+  text-decoration: none;
+  width: 30px;
+  margin: 5px;
+}
+
+.social-media-img {
+  width: 40px;
+}
