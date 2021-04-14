@@ -118,7 +118,7 @@ li {
 /* ABOUT SECTION */
 #about {
   margin-top: 120px;
-  height: 80vh;
+  min-height: 80vh;
   margin-left: 60px;
 }
 
@@ -135,6 +135,11 @@ li {
   float: right;
   margin-top: 60px;
   margin-left: 120px;
+}
+
+.about-hr {
+  margin-top: 150px;
+  margin-bottom: 40px;
 }
 
 .profile-pic {
@@ -177,10 +182,12 @@ li {
 #work {
   /* height: 40vh; */
   /* background-color: red; */
+  
 }
 
 .work-section {
   height: auto;
+  
 }
 
 .work-text-1 {
@@ -249,7 +256,7 @@ li {
 
 .home {
   margin-top: 80px;
-  height: 80vh;
+  min-height: 80vh;
   margin-left: 60px;
 }
 
@@ -287,11 +294,15 @@ li {
   font-size: 1rem;
 }
 
+.home-hr {
+  margin-top: 150px;
+}
+
 
 /* CONTACT SECTION */
 
 #contact{
-  height: 60vh;
+  min-height: 60vh;
   width: 50%;
   margin: auto;
   margin-top: 60px;
